@@ -8,7 +8,7 @@ const guests = [
     'Pippo'
   ];
 
-const urName = prompt("Inserisci il tuo nome")
+const urName = prompt("Inserisci il tuo nome").toLowerCase();
 
 // if (guests.indexOf(urName) === 0) {
 //     alert("Sei invitato alla festa")
@@ -19,7 +19,7 @@ const urName = prompt("Inserisci il tuo nome")
 thereIs = false
 
 for (let i = 0; i < guests.length; i++) {
-    if (guests[i] === urName) {
+    if (guests[i].toLowerCase() === urName) {
     thereIs = true
     }
 }
